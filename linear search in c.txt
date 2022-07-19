@@ -1,0 +1,32 @@
+#include<stdio.h>
+main()
+{
+	int a[20],s,i,n,pos;
+	
+	printf("The array size is : ");
+	
+	scanf("%d",&s);
+	
+	printf("\nthe array element is : \n");
+	for(i=0;i<s;i++)
+	scanf("%d",&a[i]);
+	
+	printf("the searching element is :");
+	 scanf("%d",&n);
+	
+	for(i=0;i<=n;i++)
+	
+	if(a[i]==n)
+		
+		
+	{
+		printf("\nthe arrey possition is :%d",i);
+	break;
+	}
+
+	if(a[i]!=n)
+	
+	{
+		printf("\nthe element not found");
+	}
+}
