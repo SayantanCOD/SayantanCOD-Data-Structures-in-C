@@ -1,0 +1,42 @@
+#include<stdio.h>
+main()
+{
+	int a[10],s,i,n,fst,lst,mid;
+	
+	printf("the array size is:");
+	scanf("%d",&s);
+	
+	printf("the array element  is:");
+	for(i=0;i<s;i++)
+	scanf("%d",&a[i]);
+	
+	printf("the searching element is :");
+	scanf("%d",&n);
+	fst=0;
+    lst=s-1;
+	mid=(fst+lst)/2;
+	while(fst<=lst)
+	{
+		
+		if(a[mid]<n)
+		fst=a[mid]+1;
+		else if (a[mid]==n)
+		{
+			printf("\n %d the searching element index at %d",n,mid);
+			break;
+		}
+		else 
+		if(a[mid>n])
+		
+		lst=mid-1;
+		mid=(fst+lst)/2;
+		}
+		
+		
+	if(fst>lst)
+	{
+		printf("\n the searching element not found !");
+	}
+		
+	
+}
